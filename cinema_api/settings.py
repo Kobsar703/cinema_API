@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
-
+SECRET_KEY = os.environ["POSTGRES_SECRET_KEY"]
+# SECRET_KEY = "django-insecure--hj&h*9*))j6orp+1n_@_&fbg$r8&hi*@y0x02j)eb$g(e@@7-"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -93,6 +93,16 @@ DATABASES = {
     }
 }
 
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "HOST": "localhost",
+#         "NAME": "cinemadb",
+#         "USER": "cinemadb",
+#         "PASSWORD": "cinemadb",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

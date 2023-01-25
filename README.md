@@ -30,8 +30,19 @@ Docker should be installed
 
 ```bash
   docker-compose build
-  docker-compose up
+  docker-compose up -d
+  ------
+  docker-compose down
 ```
+Also, cinema_api can be downloaded from docker hub by command line:
+```bash
+docker pull kobzar1001/cinema_api
+```
+
+### How to check functionality:
+- Run `docker-compose up` command, and check with `docker ps`, that 2 services are up and running;
+- Go to `127.0.0.1:8000/api/` and check project endpoints via DRF interface;
+- Create new admin user. Enter container `docker exec -it <container_name> bash`, and create in from there;
 
 ## Getting access
 
