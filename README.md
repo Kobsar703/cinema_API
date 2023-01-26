@@ -26,7 +26,7 @@ Install PostgreSQL and create database
 
 ## Run with docker
 
-Docker should be installed
+Docker should be installed and create .env file with your settings
 
 ```bash
   docker-compose build
