@@ -60,3 +60,7 @@ docker pull kobzar1001/cinema_api
 - Adding movie sessions
 - Filtering movies and movie sessions
 - Adding image to movie representation
+
+## Available endpoints
+
+![Doc swagger](endpoints.png)
