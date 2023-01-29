@@ -63,4 +63,5 @@ docker pull kobzar1001/cinema_api
 
 ## Available endpoints
 
-![Swagger endpoints](endpoints.png)
+![Doc swagger](endpoints.jpg)
+
