@@ -195,9 +195,9 @@ class AdminMovieAPITest(TestCase):
 
         self.assertEqual(result.status_code, status.HTTP_201_CREATED)
         self.assertEqual(genres.count(), 2)
-        self.assertIn(genre1, genres)
+        self.assertIn(genre_one, genres)
         self.assertEqual(actors.count(), 2)
-        self.assertIn(actor1, actors)
+        self.assertIn(actor_one, actors)
 
     def test_delete_movie_not_allowed(self):
         movie = sample_movie()
